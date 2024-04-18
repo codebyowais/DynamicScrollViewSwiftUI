@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DynamicScrollView<Content>: View where Content: View {
+public struct DynamicScrollView<Content>: View where Content: View {
     let showsIndicators: Bool
     let content: Content
     
@@ -22,7 +22,7 @@ struct DynamicScrollView<Content>: View where Content: View {
     // Height State
     @State private var contentHeight: CGFloat = .zero
     
-    var body: some View {
+    public var body: some View {
         ScrollView(showsIndicators: showsIndicators) {
             content
                 .getHeight { height in
