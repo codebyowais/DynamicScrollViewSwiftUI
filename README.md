@@ -1,2 +1,2 @@
-# DynamicScrollViewSwiftUI
-A scroll view for swiftUI which and adjust it's height based on it's content.
+# DynamicScrollView
+An scroll view which can resize itself based on content size.
